@@ -36,6 +36,7 @@
     <!-- Preload de fontes -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
     
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -43,6 +44,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
@@ -159,6 +161,39 @@
             white-space: nowrap;
             border-width: 0;
         }
+        
+        /* Estilo para seção kids */
+        .kids-section {
+            background-color: #f0f9ff;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2306b6d4' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Estilo para seção business */
+        .business-section {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .fun-icon {
+            color: #06b6d4;
+            font-size: 2.5rem;
+        }
+        
+        .business-icon {
+            color: #3b82f6;
+            font-size: 2.5rem;
+        }
+        
+        .fun-heading {
+            font-family: 'Nothing You Could Do', cursive;
+            color: #06b6d4;
+        }
+        
+        .business-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #3b82f6;
+        }
     </style>
 </head>
 
@@ -174,6 +209,8 @@
                     <a class="font-medium text-gray-700 hover:text-cyan-600" href="#hero">Início</a>
                     <a class="font-medium text-gray-700 hover:text-cyan-600" href="#methodology">Metodologia</a>
                     <a class="font-medium text-gray-700 hover:text-cyan-600" href="#services">Serviços</a>
+                    <a class="font-medium text-gray-700 hover:text-cyan-600" href="#kids">Para Crianças</a>
+                    <a class="font-medium text-gray-700 hover:text-cyan-600" href="#business">Para Negócios</a>
                     <a class="font-medium text-gray-700 hover:text-cyan-600" href="#testimonials">Depoimentos</a>
                     <a class="font-medium text-gray-700 hover:text-cyan-600" href="#contact">Contato</a>
                 </div>
@@ -192,7 +229,7 @@
                     </p>
                     <div class="flex mt-8 space-x-4">
                         <a href="#contact" class="bg-white text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
-                            Agende uma aula
+                            Inicie Agora
                         </a>
                         <a href="#methodology" class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-cyan-600 transition duration-300">
                             Conheça nossa metodologia
@@ -200,7 +237,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-left" class="hidden lg:block lg:col-span-5 mt-10 lg:mt-0">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==&auto=format&fit=crop&w=1471&q=80"
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
                         alt="Estudantes felizes aprendendo na Synapsis" 
                         class="rounded-lg shadow-2xl object-cover h-full">
                 </div>
@@ -356,7 +393,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="bi bi-check2 text-cyan-600 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Imersões de férias</span>
+                            <span>Cursos intensivos para profissionais</span>
                         </li>
                         <li class="flex items-start">
                             <i class="bi bi-check2 text-cyan-600 mt-1 mr-2" aria-hidden="true"></i>
@@ -399,8 +436,124 @@
         </div>
     </section>
 
+    <!-- Kids Section -->
+    <section id="kids" class="py-20 kids-section">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Para <span class="fun-heading">Crianças</span></h2>
+                <p class="text-gray-600">
+                    Um aprendizado divertido e eficaz que desenvolve habilidades acadêmicas e emocionais
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="fun-icon mb-4">
+                        <i class="bi bi-joystick" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Aprendizado Lúdico</h3>
+                    <p class="text-gray-600">
+                        Jogos, brincadeiras e atividades criativas que tornam o aprendizado natural e divertido.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="fun-icon mb-4">
+                        <i class="bi bi-emoji-smile" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Desenvolvimento Emocional</h3>
+                    <p class="text-gray-600">
+                        Trabalhamos a autoestima, confiança e habilidades sociais junto com o conteúdo acadêmico.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="fun-icon mb-4">
+                        <i class="bi bi-book" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reforço Escolar Personalizado</h3>
+                    <p class="text-gray-600">
+                        Apoio individualizado nas matérias escolares, respeitando o ritmo e estilo de aprendizado de cada criança.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div data-aos="fade-up" data-aos-delay="400" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="fun-icon mb-4">
+                        <i class="bi bi-translate" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Idiomas para Crianças</h3>
+                    <p class="text-gray-600">
+                        Imersão linguística natural através de histórias, músicas e atividades apropriadas para cada idade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section id="business" class="py-20 business-section">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Para <span class="business-heading">Profissionais</span></h2>
+                <p class="text-gray-600">
+                    Soluções educacionais personalizadas para impulsionar sua carreira e negócios
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="business-icon mb-4">
+                        <i class="bi bi-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inglês para Negócios</h3>
+                    <p class="text-gray-600">
+                        Cursos focados em vocabulário corporativo, reuniões, apresentações e negociações em inglês.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="business-icon mb-4">
+                        <i class="bi bi-globe" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Preparação para Expatriação</h3>
+                    <p class="text-gray-600">
+                        Aulas de idioma e cultura para profissionais que vão trabalhar no exterior.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="business-icon mb-4">
+                        <i class="bi bi-graph-up" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Treinamento Corporativo</h3>
+                    <p class="text-gray-600">
+                        Programas personalizados para equipes, com foco em comunicação eficaz em ambientes multiculturais.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div data-aos="fade-up" data-aos-delay="400" class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="business-icon mb-4">
+                        <i class="bi bi-chat-square-text" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Aperfeiçoamento Linguístico</h3>
+                    <p class="text-gray-600">
+                        Refinamento de pronúncia, escrita profissional e comunicação executiva em idiomas estrangeiros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-1 pb-20 testimonials-bg">
+    <section id="testimonials" class="py-1 pt-12 pb-20 testimonials-bg">
         <div class="mx-auto sm:px-7 px-4 max-w-screen-xl">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-4xl font-bold mb-4 text-gray-800">O que dizem <span class="text-cyan-600" style="font-family: 'Nothing You Could Do', cursive;">nossos alunos</span></h2>
@@ -568,7 +721,7 @@
         <div class="mx-auto sm:px-7 px-4 max-w-screen-xl text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar sua experiência de aprendizado?</h2>
             <p class="max-w-2xl mx-auto text-lg mb-8">
-                Agende uma aula experimental gratuita e descubra como nossa abordagem pode fazer a diferença na sua vida acadêmica ou no aprendizado de idiomas.
+                Descubra como nossa abordagem pode fazer a diferença na sua vida acadêmica, no aprendizado de idiomas ou no desenvolvimento profissional.
             </p>
             <a href="#contact" class="inline-block bg-white text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
                 Comece Agora
@@ -583,7 +736,7 @@
                 <div>
                     <h2 class="text-3xl font-bold mb-6">Entre em Contato</h2>
                     <p class="text-gray-600 mb-8">
-                        Tem dúvidas sobre nossos serviços ou quer agendar uma aula experimental? Preencha o formulário ou entre em contato diretamente por WhatsApp.
+                        Tem dúvidas sobre nossos serviços ou quer saber mais? Preencha o formulário ou entre em contato diretamente por WhatsApp.
                     </p>
                     
                     <div class="space-y-4">
@@ -637,6 +790,18 @@
                         </div>
                         
                         <div class="mb-6">
+                            <label for="interest" class="block text-gray-700 font-medium mb-2">Interesse Principal</label>
+                            <select id="interest" name="interest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent">
+                                <option value="">Selecione uma opção</option>
+                                <option value="kids">Aulas para Crianças</option>
+                                <option value="languages">Aulas de Idiomas</option>
+                                <option value="school">Reforço Escolar</option>
+                                <option value="business">Cursos para Profissionais</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem <span class="text-red-500">*</span></label>
                             <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" required></textarea>
                         </div>
@@ -672,7 +837,8 @@
                         <li><a href="#hero" class="text-gray-400 hover:text-white transition duration-300">Início</a></li>
                         <li><a href="#methodology" class="text-gray-400 hover:text-white transition duration-300">Metodologia</a></li>
                         <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
-                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Depoimentos</a></li>
+                        <li><a href="#kids" class="text-gray-400 hover:text-white transition duration-300">Para Crianças</a></li>
+                        <li><a href="#business" class="text-gray-400 hover:text-white transition duration-300">Para Negócios</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
                     </ul>
                 </div>
@@ -699,7 +865,7 @@
             <hr class="border-gray-800 my-8">
             
             <div class="text-center text-gray-400 text-sm">
-                <p>© 2023 Synapsis Educação Transformadora. Todos os direitos reservados.</p>
+                <p>© 2025 Synapsis Educação Transformadora. Todos os direitos reservados.</p>
                 <p class="mt-2"><a href="/politica-de-privacidade" class="hover:text-white">Política de Privacidade</a> | <a href="/termos-de-uso" class="hover:text-white">Termos de Uso</a></p>
             </div>
         </div>
